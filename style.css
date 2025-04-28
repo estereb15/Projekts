@@ -1,5 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Licorice&display=swap');
+
 html {
   height: 100%;
   width: 100%;
   background-color: #9CBEBE;
+}
+
+.main-header {
+  background-color: #B2A58F;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-text {
+  margin-left: 20px;
+}
+
+.header-text h1 {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 48px;
+  margin: 0;
+}
+
+.header-text p {
+  font-family: 'Licorice', cursive;
+  font-size: 24px;
+  margin: 5px 0;
 }
