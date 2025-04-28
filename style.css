@@ -4,10 +4,18 @@ html {
   height: 100%;
   width: 100%;
   background-color: #9CBEBE;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .main-header {
   background-color: #B2A58F;
+  width: 100%;
 }
 
 .header-content {
@@ -22,12 +30,35 @@ html {
 
 .header-text h1 {
   font-family: 'Just Another Hand', cursive;
-  font-size: 48px;
+  font-size: 100px;
   margin: 0;
 }
 
 .header-text p {
   font-family: 'Licorice', cursive;
-  font-size: 24px;
+  font-size: 100px;
   margin: 5px 0;
+}
+
+nav {
+  background-color: #B2A58F;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  background-color: #DDCCAB;
+  border-radius: 3px;
 }
