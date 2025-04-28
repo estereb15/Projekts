@@ -13,19 +13,34 @@ body {
   padding: 0;
 }
 
+nav {
+  background-color: #B2A58F;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
 .main-header {
   background-color: #B2A58F;
   width: 100%;
+  margin-top: 45px;
 }
 
 .header-content {
   display: flex;
   align-items: center;
   padding: 20px;
+  gap: 20px;
 }
 
 .header-text {
-  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header-text h1 {
@@ -36,15 +51,8 @@ body {
 
 .header-text p {
   font-family: 'Licorice', cursive;
-  font-size: 100px;
-  margin: 5px 0;
-}
-
-nav {
-  background-color: #B2A58F;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: flex-end;
+  font-size: 50px;
+  margin: 0;
 }
 
 nav ul {
