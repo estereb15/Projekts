@@ -79,3 +79,9 @@ nav a {
   border-radius: 3px;
 }
 
+.content-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+}
+
