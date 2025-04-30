@@ -14,7 +14,6 @@ body {
 }
 
 nav {
-  background-color: #B2A58F;
   padding: 10px 20px;
   display: flex;
   justify-content: flex-end;
@@ -22,6 +21,18 @@ nav {
   top: 0;
   right: 0;
   width: 100%;
+  z-index: 100%;
+}
+
+.main-header nav{
+ background-color: #B2A58F;
+}
+
+nav ul li a {
+  background-color: #DDCCAB;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #000;
 }
 
 .main-header {
@@ -81,7 +92,211 @@ nav a {
 
 .content-image {
   display: block;
-  margin: 20px auto;
-  max-width: 90%;
+  margin: 20px ;
+  max-width: 50%;
+}
+.darba-laiks {
+  margin-left: 20px; 
+  font-size: 22px;
 }
 
+.content-image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin: 20px 20px 0 20px;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: -180px;
+  margin-left: 400px;
+  max-width: 45%;
+  float: right;
+}
+
+.text-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.darba-laiks {
+  width: 300px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  order: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.darba-laiks h2 {
+   font-size: 22px;
+   margin-bottom: 15px;
+}
+
+.darbalaiki p {
+  margin: 5px 0;
+}
+
+.footer {
+  background-color:#B2A58F;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+nav {
+  /*background-color: #B2A58F;*/ /*Removed background color*/
+}
+
+.auth-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2.5em;
+  z-index: 2;
+  color: #000;
+}
+
+.auth-container {
+  background-image: url('surf.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 220px;
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 0;
+  position: relative;
+}
+
+.auth-container nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.auth-container nav ul {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-container nav a {
+  background: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.auth-form {
+  margin-top: 250px;
+}
+
+.auth-form {
+ background-color: #D9D9D9;
+ padding: 30px;
+ border-radius: 8px;
+ width: 300px;
+ border: 2px solid #B2A58F; 
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+width: 100%;
+padding: 8px;
+border: 1px solid #999;
+border-radius: 4px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #B2A585;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-form button:hover {
+ background-color: #a19580;
+}
+
+.gallery-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 3em;
+  z-index: 2;
+  color: #000;
+  margin: 0;
+}
+
+ .gallery-container {
+   background-image: url('Augsa.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 200px;
+   width: 100%;
+   position: relative;
+ }
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #9CBEBE;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale (1.05);
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #B2A58F;
+  padding: 15px 0;
+  }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer-left p, footer-right p {
+  margin: 5px 0;
+}
